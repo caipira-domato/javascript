@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra sua Nacionalidade</title>
+    <style>
+        
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            line-height: 50px; 
+        }
+
+        #resposta {
+            width: 295px;
+        }
+
+        .botao1 {
+            background-color: rgb(187, 189, 187);
+            font-size: 15px;
+            height: 50px;
+            width: 175px;
+        }
+
+        .botao1:hover {
+            background-image: linear-gradient(to right,#18a03a,#F3B562);
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    <h1>Você é Brasileiro ou Estrangeiro?</h1>
+    Coloque aqui o nome do seu País de origem: <input type="text" name="resposta" id="resposta"> <br>
+
+    <input class="botao1" type="button" value="Verificar" onclick="verificar()">
+
+    <div id="nacionalidade"></div>
+
+    <script>
+
+        function verificar() {
+        var res = document.getElementById("resposta")
+        var nacio = document.getElementById("nacionalidade")
+        var pais = res.value
+
+        if (pais == "Brasil") {
+            nacio.innerHTML = "Você é <strong>Brasileiro!</strong>" 
+        } else {
+            nacio.innerHTML = "Você é <strong>Gringo!</strong>"
+        }
+    }
+    </script>
+</body>
+</html>
