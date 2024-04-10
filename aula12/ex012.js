@@ -1,4 +1,5 @@
-var hora = '12'
+var agora = new Date()
+var hora = agora.getHours()
 console.log(`Agora são extamente ${hora} horas.`)
 
 if (hora <= 5) {
