@@ -1,7 +1,10 @@
 function parimp(n) {
     if (n%2 == 0) {
-    return 'Par!'
+        return 'Par!'
     } else {
-    return 'Ímpar!'
+        return 'Ímpar!'
     }
 }
+
+let res = parimp(223)
+console.log(res)
